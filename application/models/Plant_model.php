@@ -17,7 +17,7 @@ class Plant_model extends CI_Model
 		} else {
 			$area_2_db = $this->load->database('area_2_db', true);
 			if ($type != null) {
-				$this->db->where('type', $type);
+				$area_2_db->where('type', $type);
 			}
 
 			return $area_2_db->get('list');

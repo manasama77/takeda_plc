@@ -76,12 +76,12 @@
 				})
 
 				$('#btn_filter').attr('disabled', true)
+				$('#btn_print').attr('disabled', true)
 			}
 		}).always(() => $.unblockUI()).fail(e => Swal.fire({
 			icon: 'warning',
 			html: e.responseText,
 		})).done(e => {
-			console.log(e)
 			if (e.code == 200) {
 				const plantName = ($('#plant_id').val() == 1) ? "Plant 1" : "Plant 2"
 				const roomName = $('#room_id :selected').text()
@@ -101,6 +101,7 @@
 				})
 				$('#v_show').html(htmlnya)
 				$('#btn_filter').attr('disabled', false)
+				$('#btn_print').attr('disabled', false)
 				Swal.fire({
 					position: 'top-end',
 					icon: 'success',
@@ -121,7 +122,19 @@
 				</tr>
 				`)
 				$('#btn_filter').attr('disabled', true)
+				$('#btn_print').attr('disabled', true)
 			}
 		})
+	}
+
+	function printData() {
+		let plant_id = $('#plant_id').val()
+		let room_id = $('#room_id :selected').val()
+		let from_date = $('#from_date').val()
+		let to_date = $('#to_date').val()
+		let from_time = $('#from_time').val()
+		let to_time = $('#to_time').val()
+
+		console.log(plant_id, room_id, from_date, to_date, from_time, to_time)
 	}
 </script>

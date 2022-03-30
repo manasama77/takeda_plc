@@ -63,7 +63,7 @@
 								<h5>Data Temperature & Humidity</h5>
 							</div>
 							<div class="col text-right">
-								<!-- <button type="button" class="btn btn-danger" disabled>Export as PDF</button> -->
+								<button type="button" class="btn btn-danger" id="btn_print" onclick="printData()" disabled>Export as PDF</button>
 							</div>
 						</div>
 					</div>

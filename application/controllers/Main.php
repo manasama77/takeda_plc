@@ -54,8 +54,21 @@ class Main extends CI_Controller
 		echo json_encode([
 			'code' => 200,
 			'data' => $exec->result(),
-			'sql'  => urlencode($this->db->last_query()),
 		]);
+	}
+
+	public function print()
+	{
+		$plant_id  = $this->input->get('plant_id');
+		$room_id   = $this->input->get('room_id');
+		$from_date = $this->input->get('from_date');
+		$from_time = $this->input->get('from_time');
+		$to_date   = $this->input->get('to_date');
+		$to_time   = $this->input->get('to_time');
+
+		$exec = $this->Plant_model->get_table_data($plant_id, $room_id, $from_date, $from_time, $to_date, $to_time);
+
+		echo $exec->result();
 	}
 }
         
