@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 29/03/2022 08:57:03
+ Date: 31/03/2022 14:05:29
 */
 
 SET NAMES utf8mb4;
@@ -40,7 +40,7 @@ INSERT INTO `airlock` VALUES (1, '2022-03-28', '16:50:00', 50, 50);
 -- ----------------------------
 DROP TABLE IF EXISTS `airlocktolocker`;
 CREATE TABLE `airlocktolocker`  (
-  `ID` int NOT NULL AUTO_INCREMENT,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `PRESSURE` int NOT NULL,
@@ -56,12 +56,13 @@ CREATE TABLE `airlocktolocker`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `brochure`;
 CREATE TABLE `brochure`  (
-  `ID` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
+  `HUMIDITY` int NULL DEFAULT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of brochure
@@ -89,12 +90,13 @@ CREATE TABLE `climaticroom`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `coolstrorage`;
 CREATE TABLE `coolstrorage`  (
-  `ID` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  `HUMIDITY` int NOT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of coolstrorage
@@ -105,7 +107,7 @@ CREATE TABLE `coolstrorage`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `coolstrorage2`;
 CREATE TABLE `coolstrorage2`  (
-  `ID` int NOT NULL AUTO_INCREMENT,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
@@ -166,35 +168,35 @@ CREATE TABLE `list`  (
 -- ----------------------------
 -- Records of list
 -- ----------------------------
-INSERT INTO `list` VALUES (1, 'airlock', 'tnh', NULL);
-INSERT INTO `list` VALUES (2, 'brochure', 'tnh', NULL);
-INSERT INTO `list` VALUES (3, 'climaticroom', 'tnh', NULL);
-INSERT INTO `list` VALUES (4, 'coolstrorage', 'tnh', NULL);
-INSERT INTO `list` VALUES (5, 'coolstrorage2', 'tnh', NULL);
-INSERT INTO `list` VALUES (6, 'eqqc01501', 'tnh', NULL);
-INSERT INTO `list` VALUES (7, 'eqqc01502', 'tnh', NULL);
-INSERT INTO `list` VALUES (8, 'locker', 'tnh', NULL);
-INSERT INTO `list` VALUES (9, 'materialairlock', 'tnh', NULL);
-INSERT INTO `list` VALUES (10, 'microincubator1', 'tnh', NULL);
-INSERT INTO `list` VALUES (11, 'microincubator2', 'tnh', NULL);
-INSERT INTO `list` VALUES (12, 'microincubator3', 'tnh', NULL);
-INSERT INTO `list` VALUES (13, 'pac01', 'tnh', NULL);
-INSERT INTO `list` VALUES (14, 'pac02', 'tnh', NULL);
-INSERT INTO `list` VALUES (15, 'pac03', 'tnh', NULL);
-INSERT INTO `list` VALUES (16, 'reagentrefrigerator1', 'tnh', NULL);
-INSERT INTO `list` VALUES (17, 'reagentrefrigerator2', 'tnh', NULL);
-INSERT INTO `list` VALUES (18, 'reagentroom', 'tnh', NULL);
-INSERT INTO `list` VALUES (19, 'refrigatorstock', 'tnh', NULL);
-INSERT INTO `list` VALUES (20, 'refrigerator', 'tnh', NULL);
-INSERT INTO `list` VALUES (21, 'refrigerator2', 'tnh', NULL);
-INSERT INTO `list` VALUES (22, 'retainsample', 'tnh', NULL);
-INSERT INTO `list` VALUES (23, 'samplingroom', 'tnh', NULL);
-INSERT INTO `list` VALUES (24, 'udaf', 'tnh', NULL);
-INSERT INTO `list` VALUES (25, 'airlocktolocker', 'p', NULL);
-INSERT INTO `list` VALUES (26, 'lockertoatm', 'p', NULL);
-INSERT INTO `list` VALUES (27, 'materialairlocktoatm', 'p', NULL);
-INSERT INTO `list` VALUES (28, 'samplingtoairlock', 'p', NULL);
-INSERT INTO `list` VALUES (29, 'samplingtomaterialairlock', 'p', NULL);
+INSERT INTO `list` VALUES (1, 'airlock', 'airlock', 'tnh');
+INSERT INTO `list` VALUES (2, 'brochure', 'brochure', 'tnh');
+INSERT INTO `list` VALUES (3, 'climaticroom', 'climaticroom', 'tnh');
+INSERT INTO `list` VALUES (4, 'coolstrorage', 'coolstrorage', 'tnh');
+INSERT INTO `list` VALUES (5, 'coolstrorage2', 'coolstrorage2', 'tnh');
+INSERT INTO `list` VALUES (6, 'eqqc01501', 'eqqc01501', 'tnh');
+INSERT INTO `list` VALUES (7, 'eqqc01502', 'eqqc01502', 'tnh');
+INSERT INTO `list` VALUES (8, 'locker', 'locker', 'tnh');
+INSERT INTO `list` VALUES (9, 'materialairlock', 'materialairlock', 'tnh');
+INSERT INTO `list` VALUES (10, 'microincubator1', 'microincubator1', 'tnh');
+INSERT INTO `list` VALUES (11, 'microincubator2', 'microincubator2', 'tnh');
+INSERT INTO `list` VALUES (12, 'microincubator3', 'microincubator3', 'tnh');
+INSERT INTO `list` VALUES (13, 'pac01', 'pac01', 'tnh');
+INSERT INTO `list` VALUES (14, 'pac02', 'pac02', 'tnh');
+INSERT INTO `list` VALUES (15, 'pac03', 'pac03', 'tnh');
+INSERT INTO `list` VALUES (16, 'reagentrefrigerator1', 'reagentrefrigerator1', 'tnh');
+INSERT INTO `list` VALUES (17, 'reagentrefrigerator2', 'reagentrefrigerator2', 'tnh');
+INSERT INTO `list` VALUES (18, 'reagentroom', 'reagentroom', 'tnh');
+INSERT INTO `list` VALUES (19, 'refrigatorstock', 'refrigatorstock', 'tnh');
+INSERT INTO `list` VALUES (20, 'refrigerator', 'refrigerator', 'tnh');
+INSERT INTO `list` VALUES (21, 'refrigerator2', 'refrigerator2', 'tnh');
+INSERT INTO `list` VALUES (22, 'retainsample', 'retainsample', 'tnh');
+INSERT INTO `list` VALUES (23, 'samplingroom', 'samplingroom', 'tnh');
+INSERT INTO `list` VALUES (24, 'udaf', 'udaf', 'tnh');
+INSERT INTO `list` VALUES (25, 'airlocktolocker', 'airlocktolocker', 'p');
+INSERT INTO `list` VALUES (26, 'lockertoatm', 'lockertoatm', 'p');
+INSERT INTO `list` VALUES (27, 'materialairlocktoatm', 'materialairlocktoatm', 'p');
+INSERT INTO `list` VALUES (28, 'samplingtoairlock', 'samplingtoairlock', 'p');
+INSERT INTO `list` VALUES (29, 'samplingtomaterialairlock', 'samplingtomaterialairlock', 'p');
 
 -- ----------------------------
 -- Table structure for locker
@@ -218,11 +220,12 @@ CREATE TABLE `locker`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `lockertoatm`;
 CREATE TABLE `lockertoatm`  (
-  `ID` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  `PRESSURE` int NOT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of lockertoatm
@@ -233,12 +236,13 @@ CREATE TABLE `lockertoatm`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `materialairlock`;
 CREATE TABLE `materialairlock`  (
-  `ID` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  `HUMIDITY` int NOT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of materialairlock
@@ -333,9 +337,9 @@ CREATE TABLE `pac01`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `pac02`;
 CREATE TABLE `pac02`  (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `DATE` int NOT NULL,
-  `TIME` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `DATE` date NOT NULL,
+  `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
   `HUMIDITY` int NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
@@ -401,9 +405,9 @@ CREATE TABLE `reagentrefrigerator2`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `reagentroom`;
 CREATE TABLE `reagentroom`  (
-  `ID` int NOT NULL AUTO_INCREMENT,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
-  `TIME` timestamp NOT NULL DEFAULT current_timestamp ON UPDATE CURRENT_TIMESTAMP,
+  `TIME` time NOT NULL DEFAULT current_timestamp,
   `TEMPERATURE` int NOT NULL,
   `HUMIDITY` int NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
@@ -486,12 +490,13 @@ CREATE TABLE `retainsample`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `samplingroom`;
 CREATE TABLE `samplingroom`  (
-  `ID` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  `HUMIDITY` int NOT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of samplingroom
@@ -518,7 +523,7 @@ CREATE TABLE `samplingtoairlock`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `samplingtomaterialairlock`;
 CREATE TABLE `samplingtomaterialairlock`  (
-  `ID` int NOT NULL AUTO_INCREMENT,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `PRESSURE` int NOT NULL,
@@ -534,12 +539,13 @@ CREATE TABLE `samplingtomaterialairlock`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `udaf`;
 CREATE TABLE `udaf`  (
-  `ID` int NOT NULL,
+  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
   `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL
-) ENGINE = InnoDB CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+  `HUMIDITY` int NOT NULL,
+  PRIMARY KEY (`ID`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of udaf

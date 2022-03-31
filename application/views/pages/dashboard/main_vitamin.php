@@ -135,6 +135,6 @@
 		let from_time = $('#from_time').val()
 		let to_time = $('#to_time').val()
 
-		console.log(plant_id, room_id, from_date, to_date, from_time, to_time)
+		window.open(`<?= base_url(); ?>print/${plant_id}/${room_id}/${from_date}/${to_date}/${from_time}/${to_time}`)
 	}
 </script>

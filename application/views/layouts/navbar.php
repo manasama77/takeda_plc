@@ -14,5 +14,10 @@
 				<i class="fas fa-expand-arrows-alt"></i>
 			</a>
 		</li>
+		<li class="nav-item">
+			<span class="nav-link text-decoration-none">
+				<i class="fas fa-user"></i> <?= $this->session->userdata(HASH_SLING_SLICER . "operator_name"); ?>
+			</span>
+		</li>
 	</ul>
 </nav>

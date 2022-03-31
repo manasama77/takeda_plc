@@ -42,6 +42,19 @@ class Plant_model extends CI_Model
 			return $area_2_db->get($room_id);
 		}
 	}
+
+	public function get_room_name($plant_id, $room_id)
+	{
+		if ($plant_id == 1) {
+			$this->load->database();
+			$this->db->where('name', $room_id);
+			return $this->db->get('list');
+		} else {
+			$area_2_db = $this->load->database('area_2_db', true);
+			$area_2_db->where('name', $room_id);
+			return $area_2_db->get('list');
+		}
+	}
 }
                         
 /* End of file Plant_model.php */
