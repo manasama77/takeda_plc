@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Pekgo Group">
+	<meta name="description" content="Monitoring APP for TAKEDA">
 	<meta name="author" content="@adampm">
 	<title>TAKEDA | <?= $title; ?></title>
 
@@ -47,7 +47,7 @@
 	<link rel="stylesheet" href="<?= base_url(); ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
 	<link rel="stylesheet" href="<?= base_url(); ?>assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 	<!-- PACE -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@latest/pace-theme-default.min.css"> -->
 	<!-- Theme style -->
 	<link rel="stylesheet" href="<?= base_url('assets/css/adminlte.min.css'); ?>">
 	<style>
@@ -158,7 +158,7 @@
 	<script src="<?= base_url(); ?>assets/plugins/moment/moment.min.js"></script>
 	<!-- AdminLTE App -->
 	<script src="<?= base_url(); ?>assets/js/adminlte.min.js"></script>
-	<script src="<?= base_url(); ?>assets/js/adam_helpers.js"></script>
+	<!-- <script src="<?= base_url(); ?>assets/js/adam_helpers.js"></script> -->
 	<!-- datatables -->
 	<script src="<?= base_url(); ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
 	<script src="<?= base_url(); ?>assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
@@ -173,7 +173,7 @@
 	<script src="<?= base_url(); ?>assets/plugins/datatables-buttons/js/buttons.html5.min.js"></script>
 	<script src="<?= base_url(); ?>assets/plugins/datatables-buttons/js/buttons.print.min.js"></script>
 	<script src="<?= base_url(); ?>assets/plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script> -->
 </body>
 
 </html>
