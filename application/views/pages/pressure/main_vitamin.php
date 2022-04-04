@@ -1,7 +1,7 @@
 <script>
 	$('#plant_id').on('change', e => {
 		e.preventDefault();
-		getRoomList('tnh')
+		getRoomList('p')
 	})
 
 	$('#room_id').select2()
@@ -94,8 +94,7 @@
 						<td>${roomName}</td>
 						<td>${k.DATE}</td>
 						<td>${k.TIME}</td>
-						<td>${k.TEMPERATURE}</td>
-						<td>${k.HUMIDITY}</td>
+						<td>${k.PRESSURE}</td>
 					</tr>
 					`
 				})
@@ -135,6 +134,6 @@
 		let from_time = $('#from_time').val()
 		let to_time = $('#to_time').val()
 
-		window.open(`<?= base_url(); ?>print/${plant_id}/${room_id}/${from_date}/${to_date}/${from_time}/${to_time}`)
+		window.open(`<?= base_url(); ?>print/${plant_id}/${room_id}/${from_date}/${to_date}/${from_time}/${to_time}/p`)
 	}
 </script>

@@ -14,13 +14,24 @@ class Main extends CI_Controller
 	}
 
 
-	public function index()
+	public function temperature_humidity()
 	{
 		$this->check_session();
 		$data = [
 			'title'   => 'Takeda',
-			'page'    => 'dashboard/main',
-			'vitamin' => 'dashboard/main_vitamin',
+			'page'    => 'temperature_humidity/main',
+			'vitamin' => 'temperature_humidity/main_vitamin',
+		];
+		$this->load->view('template', $data, FALSE);
+	}
+
+	public function pressure()
+	{
+		$this->check_session();
+		$data = [
+			'title'   => 'Takeda',
+			'page'    => 'pressure/main',
+			'vitamin' => 'pressure/main_vitamin',
 		];
 		$this->load->view('template', $data, FALSE);
 	}
@@ -60,7 +71,7 @@ class Main extends CI_Controller
 		]);
 	}
 
-	public function print($plant_id, $room_id, $from_date, $to_date, $from_time, $to_time)
+	public function print($plant_id, $room_id, $from_date, $to_date, $from_time, $to_time, $type)
 	{
 		$this->check_session();
 		if (!$plant_id) {
@@ -89,6 +100,7 @@ class Main extends CI_Controller
 			'data'       => $exec->result(),
 			'total_data' => $exec->num_rows(),
 			'per_row'    => 50,
+			'type'       => $type,
 		];
 
 		// MPDF
@@ -101,7 +113,12 @@ class Main extends CI_Controller
 			'margin_top'        => 23,
 		]);
 
-		$mpdf->SetTitle('DATA TEMPERATURE & HUMIDITY - ' . $tgl_obj_from->format('d-m-Y H:i') . " to " . $tgl_obj_to->format('d-m-Y H:i'));
+		$title = "PRESSURE";
+		if ($type == "tnh") {
+			$title = "TEMPERATURE & HUMIDITY";
+		}
+
+		$mpdf->SetTitle('DATA ' . $title . ' - ' . $tgl_obj_from->format('d-m-Y H:i') . " to " . $tgl_obj_to->format('d-m-Y H:i'));
 
 		$mpdf->SetAuthor($operator_name);
 

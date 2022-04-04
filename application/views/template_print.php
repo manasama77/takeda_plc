@@ -10,8 +10,12 @@ $no = 1;
 				<th>No</th>
 				<th>Date</th>
 				<th>Time</th>
-				<th>Temperature</th>
-				<th>Humidity</th>
+				<?php if ($type == "tnh") { ?>
+					<th>Temperature</th>
+					<th>Humidity</th>
+				<?php } else { ?>
+					<th>Pressure</th>
+				<?php } ?>
 			</tr>
 		</thead>
 		<tbody>
@@ -28,8 +32,12 @@ $no = 1;
 					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $no++; ?></td>
 					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $tgl_obj->format('d F Y'); ?></td>
 					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $tgl_obj->format('H:i'); ?></td>
-					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->TEMPERATURE; ?>°</td>
-					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->HUMIDITY; ?>% RH</td>
+					<?php if ($type == "tnh") { ?>
+						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->TEMPERATURE; ?>°</td>
+						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->HUMIDITY; ?> % RH</td>
+					<?php } else { ?>
+						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->PRESSURE; ?> Pa</td>
+					<?php } ?>
 				</tr>
 			<?php } ?>
 		</tbody>

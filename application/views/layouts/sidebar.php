@@ -10,6 +10,14 @@
 			</a>
 		</li>
 		<li class="nav-item">
+			<a href="<?= base_url('data-pressure'); ?>" class="nav-link <?= ($this->uri->segment(1) == "data-pressure") ? "active" : null; ?>">
+				<i class="nav-icon fas fa-compress-alt"></i>
+				<p>
+					Pressure
+				</p>
+			</a>
+		</li>
+		<li class="nav-item">
 			<a href="<?= base_url('logout'); ?>" class="nav-link">
 				<i class="nav-icon fas fa-sign-out-alt"></i>
 				<p>
