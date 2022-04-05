@@ -96,9 +96,9 @@ class Main extends CI_Controller
 
 		$exec = $this->Plant_model->get_table_data($plant_id, $room_id, $from_date, $from_time, $to_date, $to_time);
 		$data = [
-			'data'       => $exec->result(),
+			'data'       => $exec->result_array(),
 			'total_data' => $exec->num_rows(),
-			'per_row'    => 50,
+			'per_row'    => 40,
 			'type'       => $type,
 		];
 
