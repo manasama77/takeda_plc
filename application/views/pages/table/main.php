@@ -24,8 +24,9 @@
 							<div class="form-group">
 								<label for="keyword">Plant</label>
 								<select class="form-control" id="plant_id" name="plant_id" data-placeholder="Pilih Plant" required>
-									<option value="1">Plant 1</option>
-									<option value="2">Plant 2</option>
+									<option value="1"><?= PLANT_1; ?></option>
+									<option value="2"><?= PLANT_2; ?></option>
+									<option value="3"><?= PLANT_3; ?></option>
 								</select>
 							</div>
 							<button type="submit" class="btn btn-primary btn-block" id="btn_filter">SHOW DATA</button>

@@ -8,7 +8,14 @@
 				DATA TEMPERATURE & HUMIDITY
 			</p>
 			<p style="line-height: 28pt; font-size: 10px; letter-spacing: 0.7pt;">
-				<?= $plant_name; ?> Room <?= $room_name; ?> — Printed by <?= $this->session->userdata(HASH_SLING_SLICER . "operator_name"); ?> — <?= $tgl_print; ?>
+				<?php
+				if ($plant_name == "PLANT 1") {
+					echo PLANT_1;
+				} elseif ($plant_name == "PLANT 2") {
+					echo PLANT_2;
+				} elseif ($plant_name == "PLANT 3") {
+					echo PLANT_3;
+				} ?> Room <?= $room_name; ?> — Printed by <?= $this->session->userdata(HASH_SLING_SLICER . "operator_name"); ?> — <?= $tgl_print; ?>
 			</p>
 		</td>
 		<!-- <td width="33%" style="text-align: right;"></td> -->

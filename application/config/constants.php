@@ -96,3 +96,7 @@ define('SESS_ADM', 'ミライ');
 
 define('USERNAME', 'admin');
 define('PASSWORD', 'admin');
+
+define('PLANT_1', 'Production');
+define('PLANT_2', 'Warehouse');
+define('PLANT_3', 'Quality Control');
