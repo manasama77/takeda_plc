@@ -55,6 +55,30 @@ class Plant_model extends CI_Model
 			return $area_2_db->get('list');
 		}
 	}
+
+	public function get_room_table_data($plant_id)
+	{
+		if ($plant_id == 1) {
+			$this->load->database();
+			return $this->db->get('list');
+		} else {
+			$area_2_db = $this->load->database('area_2_db', true);
+			return $area_2_db->get('list');
+		}
+	}
+
+	public function table_update($plant_id, $id, $data)
+	{
+		if ($plant_id == 1) {
+			$this->load->database();
+			$this->db->where('id', $id);
+			return $this->db->update('list', $data);
+		} else {
+			$area_2_db = $this->load->database('area_2_db', true);
+			$area_2_db->where('id', $id);
+			return $area_2_db->update('list', $data);
+		}
+	}
 }
                         
 /* End of file Plant_model.php */

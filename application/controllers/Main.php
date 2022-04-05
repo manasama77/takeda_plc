@@ -13,7 +13,6 @@ class Main extends CI_Controller
 		$this->load->model('Plant_model');
 	}
 
-
 	public function temperature_humidity()
 	{
 		$this->check_session();
@@ -153,6 +152,48 @@ class Main extends CI_Controller
 	{
 		if (!$this->session->userdata(HASH_SLING_SLICER . "operator_name")) {
 			redirect('logout');
+		}
+	}
+
+	public function table()
+	{
+		$this->check_session();
+		$data = [
+			'title'   => 'Takeda',
+			'page'    => 'table/main',
+			'vitamin' => 'table/main_vitamin',
+		];
+		$this->load->view('template', $data, FALSE);
+	}
+
+	public function get_room_table()
+	{
+		$plant_id  = $this->input->post('plant_id');
+
+		$exec = $this->Plant_model->get_room_table_data($plant_id);
+
+		echo json_encode([
+			'code' => 200,
+			'data' => $exec->result(),
+		]);
+	}
+
+	public function table_update()
+	{
+		$plant_id = $this->input->post('plant_id');
+		$id       = $this->input->post('id');
+		$alias    = trim($this->input->post('alias'));
+
+		$data = [
+			'alias' => $alias,
+		];
+
+		$exec = $this->Plant_model->table_update($plant_id, $id, $data);
+
+		if ($exec) {
+			echo json_encode(['code' => 200, 'lq' => $this->db->last_query()]);
+		} else {
+			echo json_encode(['code' => 500]);
 		}
 	}
 }

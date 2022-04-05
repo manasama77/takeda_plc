@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 31/03/2022 14:05:36
+ Date: 05/04/2022 00:28:34
 */
 
 SET NAMES utf8mb4;
@@ -27,11 +27,12 @@ CREATE TABLE `airlocktosecondpack`  (
   `TIME` time NOT NULL,
   `PRESSURE` int NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of airlocktosecondpack
 -- ----------------------------
+INSERT INTO `airlocktosecondpack` VALUES (1, '2022-04-05', '00:16:17', 50);
 
 -- ----------------------------
 -- Table structure for axistomixing

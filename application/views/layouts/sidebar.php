@@ -17,6 +17,16 @@
 				</p>
 			</a>
 		</li>
+		<?php if ($this->session->userdata(HASH_SLING_SLICER . 'operator_name') == "admin") { ?>
+			<li class="nav-item">
+				<a href="<?= base_url('table'); ?>" class="nav-link <?= ($this->uri->segment(1) == "table") ? "active" : null; ?>">
+					<i class="nav-icon fas fa-table"></i>
+					<p>
+						Table Setting
+					</p>
+				</a>
+			</li>
+		<?php } ?>
 		<li class="nav-item">
 			<a href="<?= base_url('logout'); ?>" class="nav-link">
 				<i class="nav-icon fas fa-sign-out-alt"></i>

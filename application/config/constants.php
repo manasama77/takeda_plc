@@ -93,3 +93,6 @@ define('PLANT_1_NAME', 'PLANT 1');
 define('PLANT_2_NAME', 'PLANT 2');
 
 define('SESS_ADM', 'ミライ');
+
+define('USERNAME', 'admin');
+define('PASSWORD', 'admin');
