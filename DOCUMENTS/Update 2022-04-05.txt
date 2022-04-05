@@ -1,2 +1,5 @@
 Kolom tanda tangan di export PDF
 Plant 3
+data float 1 desimal & pembulatan ke 1 point
+update data list isi field plant untuk perbaikan plant 3
+hasil generate data gunakan plugin datatables agar terdapat pagination

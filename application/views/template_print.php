@@ -33,10 +33,10 @@ $no = 1;
 					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $tgl_obj->format('d F Y'); ?></td>
 					<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $tgl_obj->format('H:i'); ?></td>
 					<?php if ($type == "tnh") { ?>
-						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->TEMPERATURE; ?>°</td>
-						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->HUMIDITY; ?> % RH</td>
+						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= number_format($key->TEMPERATURE, 1); ?>°C</td>
+						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= number_format($key->HUMIDITY, 1); ?> % RH</td>
 					<?php } else { ?>
-						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= $key->PRESSURE; ?> Pa</td>
+						<td style="text-align: center; <?= $odd_bg_color; ?>"><?= number_format($key->PRESSURE, 1); ?> Pa</td>
 					<?php } ?>
 				</tr>
 			<?php } ?>

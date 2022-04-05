@@ -93,8 +93,8 @@
 						<td>${roomName}</td>
 						<td>${k.DATE}</td>
 						<td>${k.TIME}</td>
-						<td>${k.TEMPERATURE}</td>
-						<td>${k.HUMIDITY}</td>
+						<td>${numeral(parseFloat(k.TEMPERATURE)).format('0,0.0')}</td>
+						<td>${numeral(k.HUMIDITY).format('0,0.0')}</td>
 					</tr>
 					`
 				})
