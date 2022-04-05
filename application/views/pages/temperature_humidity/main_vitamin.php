@@ -36,11 +36,10 @@
 			icon: 'warning',
 			html: e.responseText,
 		})).done(e => {
-			console.log(e)
 			if (e.code == 200) {
 				let htmlnya = '<option value=""></option>'
 				$.each(e.data, function(i, k) {
-					htmlnya += `<option value="${k.name}">${k.name}</option>`
+					htmlnya += `<option value="${k.name}">${k.alias}</option>`
 				})
 				$('#room_id').html(htmlnya)
 				$('#room_id').attr('disabled', false)
