@@ -91,6 +91,7 @@ define('APP_VERSION', 'v1.0.0');
 define('APP_YEAR', '2022');
 define('PLANT_1_NAME', 'PLANT 1');
 define('PLANT_2_NAME', 'PLANT 2');
+define('PLANT_3_NAME', 'PLANT 3');
 
 define('SESS_ADM', 'ミライ');
 

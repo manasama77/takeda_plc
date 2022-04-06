@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 05/04/2022 00:28:45
+ Date: 07/04/2022 00:08:22
 */
 
 SET NAMES utf8mb4;
@@ -79,11 +79,111 @@ CREATE TABLE `climaticroom`  (
   `TEMPERATURE` int NOT NULL,
   `HUMIDITY` int NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 101 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of climaticroom
 -- ----------------------------
+INSERT INTO `climaticroom` VALUES (1, '2022-04-06', '07:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (2, '2022-04-06', '08:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (3, '2022-04-06', '09:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (4, '2022-04-06', '10:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (5, '2022-04-06', '11:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (6, '2022-04-06', '12:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (7, '2022-04-06', '13:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (8, '2022-04-06', '14:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (9, '2022-04-06', '15:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (10, '2022-04-06', '16:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (11, '2022-04-06', '17:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (12, '2022-04-06', '18:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (13, '2022-04-06', '19:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (14, '2022-04-06', '20:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (15, '2022-04-06', '21:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (16, '2022-04-06', '22:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (17, '2022-04-06', '23:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (18, '2022-04-07', '00:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (19, '2022-04-07', '01:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (20, '2022-04-07', '02:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (21, '2022-04-07', '03:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (22, '2022-04-07', '04:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (23, '2022-04-07', '05:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (24, '2022-04-07', '06:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (25, '2022-04-07', '07:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (26, '2022-04-07', '08:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (27, '2022-04-07', '09:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (28, '2022-04-07', '10:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (29, '2022-04-07', '11:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (30, '2022-04-07', '12:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (31, '2022-04-07', '13:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (32, '2022-04-07', '14:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (33, '2022-04-07', '15:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (34, '2022-04-07', '16:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (35, '2022-04-07', '17:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (36, '2022-04-07', '18:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (37, '2022-04-07', '19:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (38, '2022-04-07', '20:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (39, '2022-04-07', '21:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (40, '2022-04-07', '22:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (41, '2022-04-07', '23:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (42, '2022-04-08', '00:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (43, '2022-04-08', '01:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (44, '2022-04-08', '02:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (45, '2022-04-08', '03:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (46, '2022-04-08', '04:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (47, '2022-04-08', '05:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (48, '2022-04-08', '06:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (49, '2022-04-08', '07:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (50, '2022-04-08', '08:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (51, '2022-04-08', '09:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (52, '2022-04-08', '10:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (53, '2022-04-08', '11:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (54, '2022-04-08', '12:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (55, '2022-04-08', '13:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (56, '2022-04-08', '14:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (57, '2022-04-08', '15:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (58, '2022-04-08', '16:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (59, '2022-04-08', '17:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (60, '2022-04-08', '18:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (61, '2022-04-08', '19:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (62, '2022-04-08', '20:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (63, '2022-04-08', '21:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (64, '2022-04-08', '22:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (65, '2022-04-08', '23:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (66, '2022-04-09', '00:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (67, '2022-04-09', '01:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (68, '2022-04-09', '02:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (69, '2022-04-09', '03:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (70, '2022-04-09', '04:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (71, '2022-04-09', '05:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (72, '2022-04-09', '06:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (73, '2022-04-09', '07:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (74, '2022-04-09', '08:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (75, '2022-04-09', '09:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (76, '2022-04-09', '10:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (77, '2022-04-09', '11:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (78, '2022-04-09', '12:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (79, '2022-04-09', '13:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (80, '2022-04-09', '14:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (81, '2022-04-09', '15:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (82, '2022-04-09', '16:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (83, '2022-04-09', '17:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (84, '2022-04-09', '18:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (85, '2022-04-09', '19:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (86, '2022-04-09', '20:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (87, '2022-04-09', '21:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (88, '2022-04-09', '22:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (89, '2022-04-09', '23:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (90, '2022-04-10', '00:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (91, '2022-04-10', '01:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (92, '2022-04-10', '02:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (93, '2022-04-10', '03:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (94, '2022-04-10', '04:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (95, '2022-04-10', '05:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (96, '2022-04-10', '06:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (97, '2022-04-10', '07:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (98, '2022-04-10', '08:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (99, '2022-04-10', '09:00:00', 50, 50);
+INSERT INTO `climaticroom` VALUES (100, '2022-04-10', '10:00:00', 50, 50);
 
 -- ----------------------------
 -- Table structure for coolstrorage
@@ -162,41 +262,42 @@ CREATE TABLE `list`  (
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `alias` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `type` enum('tnh','p') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `plant` int UNSIGNED NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of list
 -- ----------------------------
-INSERT INTO `list` VALUES (1, 'airlock', 'airlock', 'tnh');
-INSERT INTO `list` VALUES (2, 'brochure', 'brochure', 'tnh');
-INSERT INTO `list` VALUES (3, 'climaticroom', 'climaticroom', 'tnh');
-INSERT INTO `list` VALUES (4, 'coolstrorage', 'coolstrorage', 'tnh');
-INSERT INTO `list` VALUES (5, 'coolstrorage2', 'coolstrorage2', 'tnh');
-INSERT INTO `list` VALUES (6, 'eqqc01501', 'eqqc01501', 'tnh');
-INSERT INTO `list` VALUES (7, 'eqqc01502', 'eqqc01502', 'tnh');
-INSERT INTO `list` VALUES (8, 'locker', 'locker', 'tnh');
-INSERT INTO `list` VALUES (9, 'materialairlock', 'materialairlock', 'tnh');
-INSERT INTO `list` VALUES (10, 'microincubator1', 'microincubator1', 'tnh');
-INSERT INTO `list` VALUES (11, 'microincubator2', 'microincubator2', 'tnh');
-INSERT INTO `list` VALUES (12, 'microincubator3', 'microincubator3', 'tnh');
-INSERT INTO `list` VALUES (13, 'pac01', 'pac01', 'tnh');
-INSERT INTO `list` VALUES (14, 'pac02', 'pac02', 'tnh');
-INSERT INTO `list` VALUES (15, 'pac03', 'pac03', 'tnh');
-INSERT INTO `list` VALUES (16, 'reagentrefrigerator1', 'reagentrefrigerator1', 'tnh');
-INSERT INTO `list` VALUES (17, 'reagentrefrigerator2', 'reagentrefrigerator2', 'tnh');
-INSERT INTO `list` VALUES (18, 'reagentroom', 'reagentroom', 'tnh');
-INSERT INTO `list` VALUES (19, 'refrigatorstock', 'refrigatorstock', 'tnh');
-INSERT INTO `list` VALUES (20, 'refrigerator', 'refrigerator', 'tnh');
-INSERT INTO `list` VALUES (21, 'refrigerator2', 'refrigerator2', 'tnh');
-INSERT INTO `list` VALUES (22, 'retainsample', 'retainsample', 'tnh');
-INSERT INTO `list` VALUES (23, 'samplingroom', 'samplingroom', 'tnh');
-INSERT INTO `list` VALUES (24, 'udaf', 'udaf', 'tnh');
-INSERT INTO `list` VALUES (25, 'airlocktolocker', 'airlocktolocker', 'p');
-INSERT INTO `list` VALUES (26, 'lockertoatm', 'lockertoatm', 'p');
-INSERT INTO `list` VALUES (27, 'materialairlocktoatm', 'materialairlocktoatm', 'p');
-INSERT INTO `list` VALUES (28, 'samplingtoairlock', 'samplingtoairlock', 'p');
-INSERT INTO `list` VALUES (29, 'samplingtomaterialairlock', 'samplingtomaterialairlock', 'p');
+INSERT INTO `list` VALUES (1, 'airlock', 'airlock', 'tnh', 2);
+INSERT INTO `list` VALUES (2, 'brochure', 'brochure', 'tnh', 2);
+INSERT INTO `list` VALUES (3, 'climaticroom', 'Climatic Room', 'tnh', 3);
+INSERT INTO `list` VALUES (4, 'coolstrorage', 'coolstrorage', 'tnh', 2);
+INSERT INTO `list` VALUES (5, 'coolstrorage2', 'coolstrorage2', 'tnh', 3);
+INSERT INTO `list` VALUES (6, 'eqqc01501', 'eqqc01501', 'tnh', 3);
+INSERT INTO `list` VALUES (7, 'eqqc01502', 'eqqc01502', 'tnh', 3);
+INSERT INTO `list` VALUES (8, 'locker', 'locker', 'tnh', 2);
+INSERT INTO `list` VALUES (9, 'materialairlock', 'materialairlock', 'tnh', 2);
+INSERT INTO `list` VALUES (10, 'microincubator1', 'microincubator1', 'tnh', 3);
+INSERT INTO `list` VALUES (11, 'microincubator2', 'microincubator2', 'tnh', 3);
+INSERT INTO `list` VALUES (12, 'microincubator3', 'microincubator3', 'tnh', 3);
+INSERT INTO `list` VALUES (13, 'pac01', 'pac01', 'tnh', 2);
+INSERT INTO `list` VALUES (14, 'pac02', 'pac02', 'tnh', 2);
+INSERT INTO `list` VALUES (15, 'pac03', 'pac03', 'tnh', 2);
+INSERT INTO `list` VALUES (16, 'reagentrefrigerator1', 'reagentrefrigerator1', 'tnh', 2);
+INSERT INTO `list` VALUES (17, 'reagentrefrigerator2', 'reagentrefrigerator2', 'tnh', 2);
+INSERT INTO `list` VALUES (18, 'reagentroom', 'reagentroom', 'tnh', 3);
+INSERT INTO `list` VALUES (19, 'refrigatorstock', 'refrigatorstock', 'tnh', 2);
+INSERT INTO `list` VALUES (20, 'refrigerator', 'refrigerator', 'tnh', 3);
+INSERT INTO `list` VALUES (21, 'refrigerator2', 'refrigerator2', 'tnh', 3);
+INSERT INTO `list` VALUES (22, 'retainsample', 'retainsample', 'tnh', 3);
+INSERT INTO `list` VALUES (23, 'samplingroom', 'samplingroom', 'tnh', 2);
+INSERT INTO `list` VALUES (24, 'udaf', 'udaf', 'tnh', 2);
+INSERT INTO `list` VALUES (25, 'airlocktolocker', 'airlocktolocker', 'p', 2);
+INSERT INTO `list` VALUES (26, 'lockertoatm', 'lockertoatm', 'p', 2);
+INSERT INTO `list` VALUES (27, 'materialairlocktoatm', 'materialairlocktoatm', 'p', 2);
+INSERT INTO `list` VALUES (28, 'samplingtoairlock', 'samplingtoairlock', 'p', 2);
+INSERT INTO `list` VALUES (29, 'samplingtomaterialairlock', 'samplingtomaterialairlock', 'p', 2);
 
 -- ----------------------------
 -- Table structure for locker

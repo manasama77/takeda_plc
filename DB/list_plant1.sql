@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 05/04/2022 00:28:34
+ Date: 07/04/2022 00:08:11
 */
 
 SET NAMES utf8mb4;
@@ -138,15 +138,84 @@ CREATE TABLE `blisteringckd`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 71 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of blisteringckd
 -- ----------------------------
-INSERT INTO `blisteringckd` VALUES (1, '2022-03-27', '15:17:57', 10, 10);
+INSERT INTO `blisteringckd` VALUES (1, '2022-03-27', '15:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (2, '2022-03-27', '16:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (3, '2022-03-27', '17:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (4, '2022-03-27', '18:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (5, '2022-03-27', '19:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (6, '2022-03-27', '20:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (7, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (8, '2022-03-27', '22:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (9, '2022-03-27', '23:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (10, '2022-03-27', '00:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (11, '2022-03-27', '01:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (12, '2022-03-27', '02:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (13, '2022-03-27', '03:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (14, '2022-03-27', '04:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (15, '2022-03-27', '05:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (16, '2022-03-27', '06:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (17, '2022-03-27', '07:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (18, '2022-03-27', '08:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (19, '2022-03-27', '09:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (20, '2022-03-27', '10:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (21, '2022-03-27', '11:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (22, '2022-03-27', '12:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (23, '2022-03-27', '13:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (24, '2022-03-27', '14:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (25, '2022-03-27', '15:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (26, '2022-03-27', '16:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (27, '2022-03-27', '17:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (28, '2022-03-27', '18:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (29, '2022-03-27', '19:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (30, '2022-03-27', '20:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (31, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (32, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (33, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (34, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (35, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (36, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (37, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (38, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (39, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (40, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (41, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (42, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (43, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (44, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (45, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (46, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (47, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (48, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (49, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (50, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (51, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (52, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (53, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (54, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (55, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (56, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (57, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (58, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (59, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (60, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (61, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (62, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (63, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (64, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (65, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (66, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (67, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (68, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (69, '2022-03-27', '21:17:57', 10.151, 10.111);
+INSERT INTO `blisteringckd` VALUES (70, '2022-03-27', '21:17:57', 10.151, 10.111);
 
 -- ----------------------------
 -- Table structure for blisteringuhl
@@ -679,81 +748,82 @@ CREATE TABLE `list`  (
   `name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `alias` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `type` enum('tnh','p') CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `plant` int UNSIGNED NULL DEFAULT 1,
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 70 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of list
 -- ----------------------------
-INSERT INTO `list` VALUES (1, 'blisteringckd', 'blisteringckd', 'tnh');
-INSERT INTO `list` VALUES (2, 'blisteringuhl', 'blisteringuhl', 'tnh');
-INSERT INTO `list` VALUES (3, 'capsule', 'capsule', 'tnh');
-INSERT INTO `list` VALUES (4, 'cleanarea', 'cleanarea', 'tnh');
-INSERT INTO `list` VALUES (5, 'coating', 'coating', 'tnh');
-INSERT INTO `list` VALUES (6, 'corridor', 'corridor', 'tnh');
-INSERT INTO `list` VALUES (7, 'dirtyarea', 'dirtyarea', 'tnh');
-INSERT INTO `list` VALUES (8, 'drying', 'drying', 'tnh');
-INSERT INTO `list` VALUES (9, 'granulasia', 'granulasia', 'tnh');
-INSERT INTO `list` VALUES (10, 'granulasib', 'granulasib', 'tnh');
-INSERT INTO `list` VALUES (11, 'ipc', 'ipc', 'tnh');
-INSERT INTO `list` VALUES (12, 'megurohs', 'megurohs', 'tnh');
-INSERT INTO `list` VALUES (13, 'megurohsd', 'megurohsd', 'tnh');
-INSERT INTO `list` VALUES (14, 'mixing', 'mixing', 'tnh');
-INSERT INTO `list` VALUES (15, 'oinment', 'oinment', 'tnh');
-INSERT INTO `list` VALUES (16, 'preparation', 'preparation', 'tnh');
-INSERT INTO `list` VALUES (17, 'pulverizing', 'pulverizing', 'tnh');
-INSERT INTO `list` VALUES (18, 'rawmaterial', 'rawmaterial', 'tnh');
-INSERT INTO `list` VALUES (19, 'recivingyard', 'recivingyard', 'tnh');
-INSERT INTO `list` VALUES (20, 'semiproductionstorage', 'semiproductionstorage', 'tnh');
-INSERT INTO `list` VALUES (21, 'siebler', 'siebler', 'tnh');
-INSERT INTO `list` VALUES (22, 'small weghing', 'small weghing', 'tnh');
-INSERT INTO `list` VALUES (23, 'stagging', 'stagging', 'tnh');
-INSERT INTO `list` VALUES (24, 'sugarmilling', 'sugarmilling', 'tnh');
-INSERT INTO `list` VALUES (25, 'suppositoria', 'suppositoria', 'tnh');
-INSERT INTO `list` VALUES (26, 'tableting1', 'tableting1', 'tnh');
-INSERT INTO `list` VALUES (27, 'tableting2', 'tableting2', 'tnh');
-INSERT INTO `list` VALUES (28, 'tableting3', 'tableting3', 'tnh');
-INSERT INTO `list` VALUES (29, 'udaf', 'udaf', 'tnh');
-INSERT INTO `list` VALUES (30, 'udaf1', 'udaf1', 'tnh');
-INSERT INTO `list` VALUES (31, 'weighing', 'weighing', 'tnh');
-INSERT INTO `list` VALUES (32, 'airlocktosecondpack', 'airlocktosecondpack', 'p');
-INSERT INTO `list` VALUES (33, 'axistomixing', 'axistomixing', 'p');
-INSERT INTO `list` VALUES (34, 'axistoointment', 'axistoointment', 'p');
-INSERT INTO `list` VALUES (35, 'axistopulvrizing', 'axistopulvrizing', 'p');
-INSERT INTO `list` VALUES (36, 'axistosugarmilling', 'axistosugarmilling', 'p');
-INSERT INTO `list` VALUES (37, 'axistosupositoria', 'axistosupositoria', 'p');
-INSERT INTO `list` VALUES (38, 'axistoweighing', 'axistoweighing', 'p');
-INSERT INTO `list` VALUES (39, 'corridortoairlock', 'corridortoairlock', 'p');
-INSERT INTO `list` VALUES (40, 'corridortoatm', 'corridortoatm', 'p');
-INSERT INTO `list` VALUES (41, 'corridortoblisteringckd', 'corridortoblisteringckd', 'p');
-INSERT INTO `list` VALUES (42, 'corridortoblisteringuhl', 'corridortoblisteringuhl', 'p');
-INSERT INTO `list` VALUES (43, 'corridortocapsule', 'corridortocapsule', 'p');
-INSERT INTO `list` VALUES (44, 'corridortocleanarea', 'corridortocleanarea', 'p');
-INSERT INTO `list` VALUES (45, 'corridortocoating', 'corridortocoating', 'p');
-INSERT INTO `list` VALUES (46, 'corridortodirtyarea', 'corridortodirtyarea', 'p');
-INSERT INTO `list` VALUES (47, 'corridortodrying', 'corridortodrying', 'p');
-INSERT INTO `list` VALUES (48, 'corridortogranulationa', 'corridortogranulationa', 'p');
-INSERT INTO `list` VALUES (49, 'corridortogranulationb', 'corridortogranulationb', 'p');
-INSERT INTO `list` VALUES (50, 'corridortoipc', 'corridortoipc', 'p');
-INSERT INTO `list` VALUES (51, 'corridortomegurohs', 'corridortomegurohs', 'p');
-INSERT INTO `list` VALUES (52, 'corridortomegurohsd', 'corridortomegurohsd', 'p');
-INSERT INTO `list` VALUES (53, 'corridortopreparation', 'corridortopreparation', 'p');
-INSERT INTO `list` VALUES (54, 'corridortorawmaterial', 'corridortorawmaterial', 'p');
-INSERT INTO `list` VALUES (55, 'corridortosemiprodstorage', 'corridortosemiprodstorage', 'p');
-INSERT INTO `list` VALUES (56, 'corridortosiebler', 'corridortosiebler', 'p');
-INSERT INTO `list` VALUES (57, 'corridortostagging', 'corridortostagging', 'p');
-INSERT INTO `list` VALUES (58, 'corridortotableting1', 'corridortotableting1', 'p');
-INSERT INTO `list` VALUES (59, 'corridortotableting2', 'corridortotableting2', 'p');
-INSERT INTO `list` VALUES (60, 'corridortotableting3', 'corridortotableting3', 'p');
-INSERT INTO `list` VALUES (61, 'materialenterancetoatm', 'materialenterancetoatm', 'p');
-INSERT INTO `list` VALUES (62, 'recivingyardtoatm', 'recivingyardtoatm', 'p');
-INSERT INTO `list` VALUES (63, 'secondpacktoblisteringckd', 'secondpacktoblisteringckd', 'p');
-INSERT INTO `list` VALUES (64, 'secondpacktoblisteringuhl', 'secondpacktoblisteringuhl', 'p');
-INSERT INTO `list` VALUES (65, 'secondpacktomaterialenterance', 'secondpacktomaterialenterance', 'p');
-INSERT INTO `list` VALUES (66, 'secondpacktomegurohs', 'secondpacktomegurohs', 'p');
-INSERT INTO `list` VALUES (67, 'secondpacktomegurohsd', 'secondpacktomegurohsd', 'p');
-INSERT INTO `list` VALUES (68, 'secondpacktosiebler', 'secondpacktosiebler', 'p');
-INSERT INTO `list` VALUES (69, 'smallweghingtoweighing', 'smallweghingtoweighing', 'p');
+INSERT INTO `list` VALUES (1, 'blisteringckd', 'blisteringckd', 'tnh', 1);
+INSERT INTO `list` VALUES (2, 'blisteringuhl', 'blisteringuhl', 'tnh', 1);
+INSERT INTO `list` VALUES (3, 'capsule', 'Capsule', 'tnh', 1);
+INSERT INTO `list` VALUES (4, 'cleanarea', 'cleanarea', 'tnh', 1);
+INSERT INTO `list` VALUES (5, 'coating', 'coating', 'tnh', 1);
+INSERT INTO `list` VALUES (6, 'corridor', 'corridor', 'tnh', 1);
+INSERT INTO `list` VALUES (7, 'dirtyarea', 'dirtyarea', 'tnh', 1);
+INSERT INTO `list` VALUES (8, 'drying', 'drying', 'tnh', 1);
+INSERT INTO `list` VALUES (9, 'granulasia', 'granulasia', 'tnh', 1);
+INSERT INTO `list` VALUES (10, 'granulasib', 'granulasib', 'tnh', 1);
+INSERT INTO `list` VALUES (11, 'ipc', 'ipc', 'tnh', 1);
+INSERT INTO `list` VALUES (12, 'megurohs', 'megurohs', 'tnh', 1);
+INSERT INTO `list` VALUES (13, 'megurohsd', 'megurohsd', 'tnh', 1);
+INSERT INTO `list` VALUES (14, 'mixing', 'mixing', 'tnh', 1);
+INSERT INTO `list` VALUES (15, 'oinment', 'oinment', 'tnh', 1);
+INSERT INTO `list` VALUES (16, 'preparation', 'preparation', 'tnh', 1);
+INSERT INTO `list` VALUES (17, 'pulverizing', 'pulverizing', 'tnh', 1);
+INSERT INTO `list` VALUES (18, 'rawmaterial', 'rawmaterial', 'tnh', 1);
+INSERT INTO `list` VALUES (19, 'recivingyard', 'recivingyard', 'tnh', 1);
+INSERT INTO `list` VALUES (20, 'semiproductionstorage', 'semiproductionstorage', 'tnh', 1);
+INSERT INTO `list` VALUES (21, 'siebler', 'siebler', 'tnh', 1);
+INSERT INTO `list` VALUES (22, 'small weghing', 'small weghing', 'tnh', 1);
+INSERT INTO `list` VALUES (23, 'stagging', 'stagging', 'tnh', 1);
+INSERT INTO `list` VALUES (24, 'sugarmilling', 'sugarmilling', 'tnh', 1);
+INSERT INTO `list` VALUES (25, 'suppositoria', 'suppositoria', 'tnh', 1);
+INSERT INTO `list` VALUES (26, 'tableting1', 'tableting1', 'tnh', 1);
+INSERT INTO `list` VALUES (27, 'tableting2', 'tableting2', 'tnh', 1);
+INSERT INTO `list` VALUES (28, 'tableting3', 'tableting3', 'tnh', 1);
+INSERT INTO `list` VALUES (29, 'udaf', 'udaf', 'tnh', 1);
+INSERT INTO `list` VALUES (30, 'udaf1', 'udaf1', 'tnh', 1);
+INSERT INTO `list` VALUES (31, 'weighing', 'weighing', 'tnh', 1);
+INSERT INTO `list` VALUES (32, 'airlocktosecondpack', 'Airlock to Second Pack', 'p', 1);
+INSERT INTO `list` VALUES (33, 'axistomixing', 'axistomixing', 'p', 1);
+INSERT INTO `list` VALUES (34, 'axistoointment', 'axistoointment', 'p', 1);
+INSERT INTO `list` VALUES (35, 'axistopulvrizing', 'axistopulvrizing', 'p', 1);
+INSERT INTO `list` VALUES (36, 'axistosugarmilling', 'axistosugarmilling', 'p', 1);
+INSERT INTO `list` VALUES (37, 'axistosupositoria', 'axistosupositoria', 'p', 1);
+INSERT INTO `list` VALUES (38, 'axistoweighing', 'axistoweighing', 'p', 1);
+INSERT INTO `list` VALUES (39, 'corridortoairlock', 'corridortoairlock', 'p', 1);
+INSERT INTO `list` VALUES (40, 'corridortoatm', 'corridortoatm', 'p', 1);
+INSERT INTO `list` VALUES (41, 'corridortoblisteringckd', 'corridortoblisteringckd', 'p', 1);
+INSERT INTO `list` VALUES (42, 'corridortoblisteringuhl', 'corridortoblisteringuhl', 'p', 1);
+INSERT INTO `list` VALUES (43, 'corridortocapsule', 'corridortocapsule', 'p', 1);
+INSERT INTO `list` VALUES (44, 'corridortocleanarea', 'corridortocleanarea', 'p', 1);
+INSERT INTO `list` VALUES (45, 'corridortocoating', 'corridortocoating', 'p', 1);
+INSERT INTO `list` VALUES (46, 'corridortodirtyarea', 'corridortodirtyarea', 'p', 1);
+INSERT INTO `list` VALUES (47, 'corridortodrying', 'corridortodrying', 'p', 1);
+INSERT INTO `list` VALUES (48, 'corridortogranulationa', 'corridortogranulationa', 'p', 1);
+INSERT INTO `list` VALUES (49, 'corridortogranulationb', 'corridortogranulationb', 'p', 1);
+INSERT INTO `list` VALUES (50, 'corridortoipc', 'corridortoipc', 'p', 1);
+INSERT INTO `list` VALUES (51, 'corridortomegurohs', 'corridortomegurohs', 'p', 1);
+INSERT INTO `list` VALUES (52, 'corridortomegurohsd', 'corridortomegurohsd', 'p', 1);
+INSERT INTO `list` VALUES (53, 'corridortopreparation', 'corridortopreparation', 'p', 1);
+INSERT INTO `list` VALUES (54, 'corridortorawmaterial', 'corridortorawmaterial', 'p', 1);
+INSERT INTO `list` VALUES (55, 'corridortosemiprodstorage', 'corridortosemiprodstorage', 'p', 1);
+INSERT INTO `list` VALUES (56, 'corridortosiebler', 'corridortosiebler', 'p', 1);
+INSERT INTO `list` VALUES (57, 'corridortostagging', 'corridortostagging', 'p', 1);
+INSERT INTO `list` VALUES (58, 'corridortotableting1', 'corridortotableting1', 'p', 1);
+INSERT INTO `list` VALUES (59, 'corridortotableting2', 'corridortotableting2', 'p', 1);
+INSERT INTO `list` VALUES (60, 'corridortotableting3', 'corridortotableting3', 'p', 1);
+INSERT INTO `list` VALUES (61, 'materialenterancetoatm', 'materialenterancetoatm', 'p', 1);
+INSERT INTO `list` VALUES (62, 'recivingyardtoatm', 'recivingyardtoatm', 'p', 1);
+INSERT INTO `list` VALUES (63, 'secondpacktoblisteringckd', 'secondpacktoblisteringckd', 'p', 1);
+INSERT INTO `list` VALUES (64, 'secondpacktoblisteringuhl', 'secondpacktoblisteringuhl', 'p', 1);
+INSERT INTO `list` VALUES (65, 'secondpacktomaterialenterance', 'secondpacktomaterialenterance', 'p', 1);
+INSERT INTO `list` VALUES (66, 'secondpacktomegurohs', 'secondpacktomegurohs', 'p', 1);
+INSERT INTO `list` VALUES (67, 'secondpacktomegurohsd', 'secondpacktomegurohsd', 'p', 1);
+INSERT INTO `list` VALUES (68, 'secondpacktosiebler', 'secondpacktosiebler', 'p', 1);
+INSERT INTO `list` VALUES (69, 'smallweghingtoweighing', 'smallweghingtoweighing', 'p', 1);
 
 -- ----------------------------
 -- Table structure for materialenterancetoatm

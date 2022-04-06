@@ -12,14 +12,16 @@ class Plant_model extends CI_Model
 			if ($type != null) {
 				$this->db->where('type', $type);
 			}
-
+			$this->db->where('plant', $plant_id);
+			$this->db->order_by('id', 'ASC');
 			return $this->db->get('list');
 		} else {
 			$area_2_db = $this->load->database('area_2_db', true);
 			if ($type != null) {
 				$area_2_db->where('type', $type);
 			}
-
+			$area_2_db->where('plant', $plant_id);
+			$area_2_db->order_by('id', 'ASC');
 			return $area_2_db->get('list');
 		}
 	}
@@ -48,10 +50,14 @@ class Plant_model extends CI_Model
 		if ($plant_id == 1) {
 			$this->load->database();
 			$this->db->where('name', $room_id);
+			$this->db->where('plant', $plant_id);
+			$this->db->order_by('id', 'ASC');
 			return $this->db->get('list');
 		} else {
 			$area_2_db = $this->load->database('area_2_db', true);
 			$area_2_db->where('name', $room_id);
+			$area_2_db->where('plant', $plant_id);
+			$area_2_db->order_by('id', 'ASC');
 			return $area_2_db->get('list');
 		}
 	}
@@ -60,9 +66,13 @@ class Plant_model extends CI_Model
 	{
 		if ($plant_id == 1) {
 			$this->load->database();
+			$this->db->where('plant', $plant_id);
+			$this->db->order_by('id', 'ASC');
 			return $this->db->get('list');
 		} else {
 			$area_2_db = $this->load->database('area_2_db', true);
+			$area_2_db->where('plant', $plant_id);
+			$area_2_db->order_by('id', 'ASC');
 			return $area_2_db->get('list');
 		}
 	}

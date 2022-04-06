@@ -87,7 +87,13 @@ class Main extends CI_Controller
 			die("[400][6] Bad Request");
 		}
 
-		$plant_name = ($plant_id == 1) ? PLANT_1_NAME : PLANT_2_NAME;
+		if ($plant_id == 1) {
+			$plant_name = PLANT_1_NAME;
+		} elseif ($plant_id == 2) {
+			$plant_name = PLANT_2_NAME;
+		} elseif ($plant_id == 3) {
+			$plant_name = PLANT_3_NAME;
+		}
 
 		$tgl_obj_from  = new DateTime($from_date . " " . $from_time);
 		$tgl_obj_to    = new DateTime($to_date . " " . $to_time);
