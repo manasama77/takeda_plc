@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 07/04/2022 00:08:11
+ Date: 07/04/2022 00:19:51
 */
 
 SET NAMES utf8mb4;
@@ -25,7 +25,7 @@ CREATE TABLE `airlocktosecondpack`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 2 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -42,7 +42,7 @@ CREATE TABLE `axistomixing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -58,7 +58,7 @@ CREATE TABLE `axistoointment`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -74,7 +74,7 @@ CREATE TABLE `axistopulvrizing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -90,7 +90,7 @@ CREATE TABLE `axistosugarmilling`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -106,7 +106,7 @@ CREATE TABLE `axistosupositoria`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -122,7 +122,7 @@ CREATE TABLE `axistoweighing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -225,8 +225,8 @@ CREATE TABLE `blisteringuhl`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -242,8 +242,8 @@ CREATE TABLE `capsule`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -259,8 +259,8 @@ CREATE TABLE `cleanarea`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -276,8 +276,8 @@ CREATE TABLE `coating`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -293,8 +293,8 @@ CREATE TABLE `corridor`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -310,7 +310,7 @@ CREATE TABLE `corridortoairlock`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -326,7 +326,7 @@ CREATE TABLE `corridortoatm`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -342,7 +342,7 @@ CREATE TABLE `corridortoblisteringckd`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -358,7 +358,7 @@ CREATE TABLE `corridortoblisteringuhl`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -374,7 +374,7 @@ CREATE TABLE `corridortocapsule`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -390,7 +390,7 @@ CREATE TABLE `corridortocleanarea`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -406,7 +406,7 @@ CREATE TABLE `corridortocoating`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -422,7 +422,7 @@ CREATE TABLE `corridortodirtyarea`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -438,7 +438,7 @@ CREATE TABLE `corridortodrying`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -454,7 +454,7 @@ CREATE TABLE `corridortogranulationa`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -470,7 +470,7 @@ CREATE TABLE `corridortogranulationb`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -486,7 +486,7 @@ CREATE TABLE `corridortoipc`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -502,7 +502,7 @@ CREATE TABLE `corridortomegurohs`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -518,7 +518,7 @@ CREATE TABLE `corridortomegurohsd`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -534,7 +534,7 @@ CREATE TABLE `corridortopreparation`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -550,7 +550,7 @@ CREATE TABLE `corridortorawmaterial`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -566,7 +566,7 @@ CREATE TABLE `corridortosemiprodstorage`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -582,7 +582,7 @@ CREATE TABLE `corridortosiebler`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -598,7 +598,7 @@ CREATE TABLE `corridortostagging`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -614,7 +614,7 @@ CREATE TABLE `corridortotableting1`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -630,7 +630,7 @@ CREATE TABLE `corridortotableting2`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -646,7 +646,7 @@ CREATE TABLE `corridortotableting3`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -662,8 +662,8 @@ CREATE TABLE `dirtyarea`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -679,8 +679,8 @@ CREATE TABLE `drying`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -696,8 +696,8 @@ CREATE TABLE `granulasia`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -713,8 +713,8 @@ CREATE TABLE `granulasib`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -730,8 +730,8 @@ CREATE TABLE `ipc`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -833,7 +833,7 @@ CREATE TABLE `materialenterancetoatm`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -849,8 +849,8 @@ CREATE TABLE `megurohs`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -866,8 +866,8 @@ CREATE TABLE `megurohsd`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -883,8 +883,8 @@ CREATE TABLE `mixing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -900,8 +900,8 @@ CREATE TABLE `oinment`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -917,8 +917,8 @@ CREATE TABLE `preparation`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -934,8 +934,8 @@ CREATE TABLE `pulverizing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -951,8 +951,8 @@ CREATE TABLE `rawmaterial`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -968,8 +968,8 @@ CREATE TABLE `recivingyard`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -985,7 +985,7 @@ CREATE TABLE `recivingyardtoatm`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1001,7 +1001,7 @@ CREATE TABLE `secondpacktoblisteringckd`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1017,7 +1017,7 @@ CREATE TABLE `secondpacktoblisteringuhl`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1033,7 +1033,7 @@ CREATE TABLE `secondpacktomaterialenterance`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1049,7 +1049,7 @@ CREATE TABLE `secondpacktomegurohs`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1065,7 +1065,7 @@ CREATE TABLE `secondpacktomegurohsd`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1081,7 +1081,7 @@ CREATE TABLE `secondpacktosiebler`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1097,8 +1097,8 @@ CREATE TABLE `semiproductionstorage`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1114,8 +1114,8 @@ CREATE TABLE `siebler`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1131,8 +1131,8 @@ CREATE TABLE `small weghing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1148,7 +1148,7 @@ CREATE TABLE `smallweghingtoweighing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `PRESSURE` int NOT NULL,
+  `PRESSURE` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1164,8 +1164,8 @@ CREATE TABLE `stagging`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1181,8 +1181,8 @@ CREATE TABLE `sugarmilling`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1198,8 +1198,8 @@ CREATE TABLE `suppositoria`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1215,8 +1215,8 @@ CREATE TABLE `tableting1`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1232,8 +1232,8 @@ CREATE TABLE `tableting2`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1249,8 +1249,8 @@ CREATE TABLE `tableting3`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1266,8 +1266,8 @@ CREATE TABLE `udaf`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1283,8 +1283,8 @@ CREATE TABLE `udaf1`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
@@ -1300,8 +1300,8 @@ CREATE TABLE `weighing`  (
   `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
   `TIME` time NOT NULL,
-  `TEMPERATURE` int NOT NULL,
-  `HUMIDITY` int NOT NULL,
+  `TEMPERATURE` float NOT NULL,
+  `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
