@@ -11,7 +11,7 @@
  Target Server Version : 100421
  File Encoding         : 65001
 
- Date: 05/05/2022 20:28:36
+ Date: 05/05/2022 20:31:24
 */
 
 SET NAMES utf8mb4;
@@ -405,9 +405,9 @@ CREATE TABLE `reagentrefrigerator2`  (
 -- ----------------------------
 DROP TABLE IF EXISTS `reagentroom`;
 CREATE TABLE `reagentroom`  (
-  `ID` int UNSIGNED NOT NULL AUTO_INCREMENT,
+  `ID` int NOT NULL AUTO_INCREMENT,
   `DATE` date NOT NULL,
-  `TIME` time NOT NULL DEFAULT current_timestamp,
+  `TIME` time NOT NULL,
   `TEMPERATURE` float NOT NULL,
   `HUMIDITY` float NOT NULL,
   PRIMARY KEY (`ID`) USING BTREE
